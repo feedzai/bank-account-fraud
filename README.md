@@ -8,15 +8,26 @@ Evaluating new ML techniques on realistic datasets plays a crucial role in the d
 
 In this repository, you will find the code necessary to replicate the experiments of the presented paper, in the `notebooks` folder.
 
-Additionally, both the paper and the datasheet are available in the `documents` folder.
+The [first notebook](notebooks/generate_dataset_variants.ipynb) regards the process of sampling from a large dataset to obtain the different variants that constitute the suite of datasets.
+
+The [second notebook](notebooks/empirical_results.ipynb) presents the train of 100 LightGBM models (hyperparameters selected through random search) on the suite of datasets, as well as plots of the results. 
+
+To replicate the environment used in the experiments, install the  `requirements.txt` file via pip in a Python 3.7 environment. 
+
+Additionally, you can find the official documentation of the suite of datasets in the `documents` folder. In this folder you will find the:
+- [Paper](documents/BAF_paper.pdf)
+- [Datasheet](documents/datasheet.pdf)
+
+The paper contains more detailed information on motivation, generation of the base dataset and [variants](notebooks/generate_dataset_variants.ipynb) and an experiment performed in the [empirical results notebook](notebooks/empirical_results.ipynb).
+The datasheet contains a summarized description of the dataset. 
 
 ## Datasets
 
-The presented datasets are available in the following link(s): 
+The presented datasets are available in the following links: 
 
-- [Compressed file](https://drive.google.com/file/d/1c0aArGexVMXBZGXr7XPtviAuBAmjuk03/view?usp=sharing)
+- [Compressed version](https://drive.google.com/file/d/1c0aArGexVMXBZGXr7XPtviAuBAmjuk03/view?usp=sharing)
 
-- [Uncompressed files](https://drive.google.com/drive/folders/1TyilFSiJgP2DLk4UbSCGUcKnR4mXXsYR?usp=sharing)
+- [Uncompressed version](https://drive.google.com/drive/folders/1TyilFSiJgP2DLk4UbSCGUcKnR4mXXsYR?usp=sharing)
 
 ## Citation
 ```
