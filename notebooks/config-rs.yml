@@ -1,0 +1,102 @@
+data:
+  train: <train_path>
+  validation: <val_path>
+  keep:
+    - fraud_bool
+    - income
+    - name_email_similarity
+    - prev_address_months_count
+    - current_address_months_count
+    - customer_age
+    - days_since_request
+    - intended_balcon_amount
+    - payment_type
+    - zip_count_4w
+    - velocity_6h
+    - velocity_24h
+    - velocity_4w
+    - bank_branch_count_8w
+    - date_of_birth_distinct_emails_4w
+    - employment_status
+    - credit_risk_score
+    - email_is_free
+    - housing_status
+    - phone_home_valid
+    - phone_mobile_valid
+    - bank_months_count
+    - has_other_cards
+    - proposed_credit_limit
+    - foreign_request
+    - source
+    - session_length_in_minutes
+    - device_os
+    - keep_alive_session
+    - device_distinct_emails_8w
+    - device_fraud_count
+    - month
+sweep_params:
+  data:
+    prevalence: 
+      - (1, 4)
+      - (1, 9)
+      - (1, 19)
+      - None
+  model:
+    kwargs:
+      epochs: 
+        type: int
+        range: [ 50, 1000 ]
+        log: False
+
+      batch_size: 
+        type: int
+        range: [ 100, 1000 ]
+        log: True
+
+      log_frequency: 
+        - True
+        - False
+      
+      embedding_dim: 
+        type: int
+        range: [ 8, 256 ]
+        log: False
+    
+      generator_dim: 
+        - (256, 256)
+        - (128, 128)
+        - (512, 512)
+        - (128, 128, 128)
+        - (128, 128, 128)
+        - (512, )
+        - (256, )
+        - (128, )
+
+      discriminator_dim: 
+        - (256, )
+        - (128, )
+        - (64, )
+        - (64, 64)
+        - (128, 64)
+
+      generator_lr: 
+        type: float
+        range: [ 0.0000001 ,1 ]
+        log: True
+      
+
+      discriminator_lr:
+        type: float
+        range: [ 0.0000001 ,1 ]
+        log: True
+    
+      generator_decay: 1e-7
+
+      discriminator_decay: 1e-7
+
+      discriminator_steps:         
+        type: int
+        range: [ 2, 10 ]
+        log: False
+    
+      verbose: True
