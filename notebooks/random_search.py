@@ -1,5 +1,4 @@
 import logging
-import optuna
 
 from copy import deepcopy
 from optuna.samplers import RandomSampler
