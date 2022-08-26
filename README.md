@@ -51,7 +51,7 @@ dataframes = {
 }
 ```
 
-This code will read every instance of the dataset in several `pandas.DataFrames`. It is also possible to read with other engines, such as `spark`.
+This code will read every variant of the dataset available in the provided path. These are available in several `pandas.DataFrames`, discriminated by variant by the key in the `dataframes` dictionary. It is also possible to read with other engines, such as `spark`.
 
 ## Repository Structure
 
