@@ -8,14 +8,50 @@ Evaluating new ML techniques on realistic datasets plays a crucial role in the d
 
 The suite of datasets is available in the following links: 
 
-- [Compressed version](https://drive.google.com/file/d/1c0aArGexVMXBZGXr7XPtviAuBAmjuk03/view?usp=sharing)
+- [Compressed version (csv)](https://drive.google.com/file/d/1MG3uFinxdnGeysQsKqBLrfZKlHo_LvLy/view?usp=sharing)
 
-- [Uncompressed version](https://drive.google.com/drive/folders/1TyilFSiJgP2DLk4UbSCGUcKnR4mXXsYR?usp=sharing)
+- [Uncompressed version (csv)](https://drive.google.com/drive/folders/1CwBQB-FAn1WKJTABA7Ww_DIW-OLEWDcP?usp=sharing)
+
+- [Compressed version (parquet)](https://drive.google.com/file/d/1c0aArGexVMXBZGXr7XPtviAuBAmjuk03/view?usp=sharing)
+
+- [Uncompressed version (parquet)](https://drive.google.com/drive/folders/1ZiXIfLBgm6AY5KqCrsaHyXKqUv-s9lo1?usp=sharing)
 
 The paper and datasheet are available in the following links:
 
 - [Paper](documents/BAF_paper.pdf)
 - [Datasheet](documents/datasheet.pdf)
+
+## Loading the Dataset
+
+To load the dataset the first step is to download the variants from one of the possible resources above. The `parquet` extensions allow for smaller file sizes (approx. 3 times smaller) and quicker load speeds, at the cost of having to install an external reader package, such as `pyarrow` (if using `pandas`). Alternatively, we provide `csv` versions. If the compressed version is download, it is required to decompress it.
+
+Then, executing the small script bellow allows to read every variant of the dataset.
+
+
+```python
+import glob
+import pandas as pd
+
+extension = "csv"  # or "parquet", depending on the downloaded file
+data_paths = glob.glob(f"</path/to/datasets/>*.{extension}")
+
+def read_dataset(path, ext=extension):
+    if ext == "csv":
+        return pd.read_csv(path, index=0)
+    elif ext == "parquet":
+        return pd.read_parquet(path)
+    else:
+        raise ValueError(f"Invalid extension: '{ext}'.")
+
+def get_variant(path):
+        return path.split("/")[-1].split(".")[0]
+
+dataframes = {
+    get_variant(path): read_dataset(path) for path in data_paths
+}
+```
+
+This code will read every instance of the dataset in several `pandas.DataFrames`. It is also possible to read with other engines, such as `spark`.
 
 ## Repository Structure
 
