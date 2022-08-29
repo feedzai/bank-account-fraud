@@ -37,7 +37,7 @@ data_paths = glob.glob(f"</path/to/datasets/>*.{extension}")
 
 def read_dataset(path, ext=extension):
     if ext == "csv":
-        return pd.read_csv(path, index=0)
+        return pd.read_csv(path, index_col=0)
     elif ext == "parquet":
         return pd.read_parquet(path)
     else:
