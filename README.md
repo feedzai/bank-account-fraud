@@ -1,4 +1,4 @@
-# `bank-account-fraud`: Tabular Dataset(s) for Fraud Detection under Multiple Bias Conditions
+# `bank-account-fraud`: Fraud Detection Tabular Dataset(s) under Multiple Bias Conditions
 
 > **Note**
 > We're pleased to announce that the `bank-account-fraud` paper has been _**accepted to NeurIPS 2022!**_
