@@ -1,4 +1,4 @@
-# *B*ank *A*ccount *F*raud (BAF) Tabular Dataset Suite
+# **B**ank **A**ccount **F**raud (BAF) Tabular Dataset Suite
 
 > **Note**
 > We're pleased to announce that the paper describing this dataset suite ``Turning the Tables: Biased, Imbalanced, Dynamic Tabular Datasets for ML Evaluation'' ha been accepted to **NeurIPS 2022**. Link to paper [here](https://openreview.net/pdf?id=UrAYT2QwOX8).
