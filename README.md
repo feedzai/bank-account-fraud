@@ -1,13 +1,13 @@
 # **B**ank **A**ccount **F**raud (BAF) Tabular Dataset Suite
 
 > **Note**
-> We're pleased to announce that the paper describing this dataset suite ''Turning the Tables: Biased, Imbalanced, Dynamic Tabular Datasets for ML Evaluation'' ha been accepted to **NeurIPS 2022**. Link to paper [here](https://openreview.net/pdf?id=UrAYT2QwOX8).
+> The paper describing this dataset suite ''Turning the Tables: Biased, Imbalanced, Dynamic Tabular Datasets for ML Evaluation'' ha been accepted to **NeurIPS 2022**. 
+Link to paper [here](https://arxiv.org/pdf/2211.13358.pdf).
+Link to the datasets [here](https://www.kaggle.com/datasets/sgpjesus/bank-account-fraud-dataset-neurips-2022).
+
 > 
 
-> **Note**
-> We're also pleased to announce that the suite of datasets is now publicly available on Kaggle!
-Link to the datasets [here](https://www.kaggle.com/datasets/sgpjesus/bank-account-fraud-dataset-neurips-2022).
->
+
 
 ## Abstract
 
