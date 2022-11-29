@@ -67,10 +67,10 @@ The datasheet contains a summarized description of the dataset.
 
 ## Citation
 ```
-@article{jesus2022bank,
-  title={bank-account-fraud: Tabular Dataset(s) for Fraud Detection under Multiple Bias Conditions},
-  author={Jesus, S{\'{e}}rgio and Pombal, Jos{\'{e}} and Alves, Duarte and Cruz, Andr{\'{e}} F and Saleiro, Pedro and Ribeiro, Rita P. and Gama, Jo{\~{a}}o and Bizarro, Pedro},
-  journal={Working Paper},
+@article{jesusTurningTablesBiased2022,
+  title={Turning the {{Tables}}: {{Biased}}, {{Imbalanced}}, {{Dynamic Tabular Datasets}} for {{ML Evaluation}}},
+  author={Jesus, S{\'e}rgio and Pombal, Jos{\'e} and Alves, Duarte and Cruz, Andr{\'e} and Saleiro, Pedro and Ribeiro, Rita P. and Gama, Jo{\~a}o and Bizarro, Pedro},
+  journal={Advances in Neural Information Processing Systems},
   year={2022}
 }
 ```
