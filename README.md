@@ -10,8 +10,7 @@ Evaluating new techniques on realistic datasets plays a crucial role in the deve
 
 ## Resources
 
-> **Note**
-> Dataset will be publicly available on the **12th of October 2022**,  we're still applying reviewer feedback to improve our work.
+The dataset is available through [Kaggle](https://www.kaggle.com/datasets/sgpjesus/bank-account-fraud-dataset-neurips-2022).
 
 The _preprint_ paper and datasheet are available in the following links:
 
