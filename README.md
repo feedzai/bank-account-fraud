@@ -15,7 +15,7 @@ Evaluating new techniques on realistic datasets plays a crucial role in the deve
 
 ## Resources
 
-The dataset suite is available through [Kaggle](https://www.kaggle.com/datasets/sgpjesus/bank-account-fraud-dataset-neurips-2022).
+**The dataset suite is available through [Kaggle](https://www.kaggle.com/datasets/sgpjesus/bank-account-fraud-dataset-neurips-2022).**
 
 The _preprint_ paper and datasheet are available in the following links:
 
