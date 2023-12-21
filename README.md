@@ -4,7 +4,7 @@
 
 **The public dataset suite is available for download through [Kaggle](https://www.kaggle.com/datasets/sgpjesus/bank-account-fraud-dataset-neurips-2022).**
 
-> The paper describing this dataset suite ''Turning the Tables: Biased, Imbalanced, Dynamic Tabular Datasets for ML Evaluation'' ha been accepted to **NeurIPS 2022**. 
+> The paper describing this dataset suite ''Turning the Tables: Biased, Imbalanced, Dynamic Tabular Datasets for ML Evaluation'' ha been accepted at **NeurIPS 2022**. 
 [NeurIPS Paper](https://arxiv.org/pdf/2211.13358.pdf).
 [Datasheet](documents/datasheet.pdf)
 
